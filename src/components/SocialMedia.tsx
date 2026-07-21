@@ -56,7 +56,7 @@ export function SocialMedia() {
                 href="https://www.instagram.com/gianni_maia/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-transparent border border-gold-500 text-gold-500 hover:bg-gold-500/20 hover:text-white font-bold uppercase text-xs tracking-widest rounded-sm transition-all group"
+                className="whitespace-nowrap inline-flex items-center justify-center gap-2 px-8 py-3 bg-transparent border border-gold-500 text-gold-500 hover:bg-gold-500/20 hover:text-white font-bold uppercase text-xs tracking-widest rounded-sm transition-all group"
               >
                 Conheça nossa rede social
                 <ExternalLink size={16} className="group-hover:translate-x-1 transition-transform" />
@@ -117,7 +117,7 @@ export function SocialMedia() {
                 href="https://www.instagram.com/giannimaia_advocacia?igsh=ZzNvazZ5eTJnOGh5" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-transparent border border-gold-500 text-gold-500 hover:bg-gold-500/20 hover:text-white font-bold uppercase text-xs tracking-widest rounded-sm transition-all group"
+                className="whitespace-nowrap inline-flex items-center justify-center gap-2 px-8 py-3 bg-transparent border border-gold-500 text-gold-500 hover:bg-gold-500/20 hover:text-white font-bold uppercase text-xs tracking-widest rounded-sm transition-all group"
               >
                 Conheça nossa rede social
                 <ExternalLink size={16} className="group-hover:translate-x-1 transition-transform" />

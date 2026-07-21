@@ -101,7 +101,7 @@ export function WhatsAppWidget() {
         animate={{ scale: 1, opacity: 1 }}
         transition={{ delay: 0.5, type: "spring", stiffness: 200, damping: 20 }}
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center sm:bg-white sm:text-[#0A1128] sm:px-4 sm:py-3 sm:rounded-full sm:shadow-2xl sm:space-x-3 cursor-pointer sm:border-2 sm:border-[#25D366] hover:scale-105 transition-transform"
+        className="flex items-center bg-transparent sm:bg-white sm:text-[#0A1128] sm:px-4 sm:py-3 sm:rounded-full sm:shadow-2xl sm:space-x-3 cursor-pointer sm:border-2 sm:border-[#25D366] hover:scale-105 transition-transform outline-none"
         aria-label="Falar pelo WhatsApp"
       >
         <div className="w-14 h-14 sm:w-8 sm:h-8 bg-[#25D366] rounded-full flex items-center justify-center relative shadow-lg sm:shadow-none">

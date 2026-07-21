@@ -6,7 +6,7 @@ export function Hero() {
   const whatsappLink = "https://api.whatsapp.com/send/?phone=5535987135775&text=Ol%C3%A1%21+Gostaria+de+agendar+uma+an%C3%A1lise+jur%C3%ADdica+do+meu+caso.&type=phone_number&app_absent=0";
 
   return (
-    <section id="inicio" className="relative min-h-[100svh] flex items-center pt-24 pb-16 overflow-hidden">
+    <section id="inicio" className="relative min-h-[100svh] flex items-center pt-32 lg:pt-40 pb-16 overflow-hidden">
       {/* Background with overlay */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-br from-primary-900 via-primary-800 to-slate-900 opacity-95 z-10" />

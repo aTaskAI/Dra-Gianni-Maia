@@ -1,6 +1,7 @@
-import { motion } from 'motion/react';
+import { motion, AnimatePresence } from 'motion/react';
 import { Star, Quote, ExternalLink } from 'lucide-react';
 import { ASSETS } from '../config/assets';
+import { useState, useEffect } from 'react';
 
 const TESTIMONIALS = [
   {
@@ -42,6 +43,15 @@ const TESTIMONIALS = [
 ];
 
 export function Testimonials() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % TESTIMONIALS.length);
+    }, 4000);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <section id="depoimentos" className="py-24 bg-[#0A1128] relative">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -92,31 +102,51 @@ export function Testimonials() {
           )}
         </div>
 
-        {/* Mobile Slider (Native Scroll Snap) */}
-        <div className="flex md:hidden overflow-x-auto snap-x snap-mandatory gap-4 pb-8 -mx-6 px-6 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
-          {TESTIMONIALS.map((testimonial) => (
-            <div
-              key={`mobile-${testimonial.id}`}
-              className="w-[85vw] flex-shrink-0 snap-center bg-primary-800/50 p-6 sm:p-8 rounded-2xl border border-white/5 relative flex flex-col min-h-[280px]"
-            >
-              <Quote className="text-gold-500/10 absolute top-6 right-6 w-10 h-10" />
-              
-              <div className="flex gap-1 mb-6">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} size={16} className="fill-gold-500 text-gold-500" />
-                ))}
-              </div>
-              
-              <p className="text-slate-300 italic mb-8 relative z-10 leading-relaxed text-sm flex-grow">
-                "{testimonial.text}"
-              </p>
-              
-              <div className="mt-auto border-t border-white/5 pt-4">
-                <p className="text-white font-semibold text-sm">{testimonial.name}</p>
-                <p className="text-gold-500 text-xs mt-1">{testimonial.role}</p>
-              </div>
-            </div>
-          ))}
+        {/* Mobile Slider (Auto-play with Dots) */}
+        <div className="block md:hidden relative w-full mb-8">
+          <div className="relative min-h-[300px] sm:min-h-[280px]">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={currentSlide}
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -20 }}
+                transition={{ duration: 0.3 }}
+                className="absolute inset-0 bg-primary-800/50 p-6 sm:p-8 rounded-2xl border border-white/5 flex flex-col"
+              >
+                <Quote className="text-gold-500/10 absolute top-6 right-6 w-10 h-10" />
+                
+                <div className="flex gap-1 mb-6">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} size={16} className="fill-gold-500 text-gold-500" />
+                  ))}
+                </div>
+                
+                <p className="text-slate-300 italic mb-6 relative z-10 leading-relaxed text-sm flex-grow">
+                  "{TESTIMONIALS[currentSlide].text}"
+                </p>
+                
+                <div className="mt-auto border-t border-white/5 pt-4">
+                  <p className="text-white font-semibold text-sm">{TESTIMONIALS[currentSlide].name}</p>
+                  <p className="text-gold-500 text-xs mt-1">{TESTIMONIALS[currentSlide].role}</p>
+                </div>
+              </motion.div>
+            </AnimatePresence>
+          </div>
+          
+          {/* Indicators */}
+          <div className="flex justify-center gap-2 mt-6">
+            {TESTIMONIALS.map((_, index) => (
+              <button
+                key={`dot-${index}`}
+                onClick={() => setCurrentSlide(index)}
+                className={`h-2 rounded-full transition-all duration-300 ${
+                  currentSlide === index ? 'bg-gold-500 w-6' : 'bg-white/20 w-2'
+                }`}
+                aria-label={`Ver depoimento ${index + 1}`}
+              />
+            ))}
+          </div>
         </div>
 
         {/* Desktop Grid */}

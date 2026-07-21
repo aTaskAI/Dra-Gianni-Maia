@@ -40,10 +40,10 @@ export default function CallToAction() {
             href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-3 bg-[#25D366] hover:bg-[#1ebd5a] text-white px-10 py-5 text-lg font-bold uppercase tracking-wider rounded-lg transition-all shadow-lg hover:shadow-[#25D366]/20 hover:-translate-y-1"
+            className="w-full sm:w-auto inline-flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 bg-[#25D366] hover:bg-[#1ebd5a] text-white px-6 sm:px-10 py-4 sm:py-5 text-sm md:text-lg font-bold uppercase tracking-wider rounded-lg transition-all shadow-lg hover:shadow-[#25D366]/20 hover:-translate-y-1 text-center"
           >
-            <MessageCircle size={24} />
-            Falar agora com nossa equipe
+            <MessageCircle className="w-6 h-6 sm:w-8 sm:h-8 mb-1 sm:mb-0" />
+            <span>Falar agora com nossa equipe</span>
           </a>
         </motion.div>
       </div>
