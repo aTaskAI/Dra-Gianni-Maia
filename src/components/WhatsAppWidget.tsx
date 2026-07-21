@@ -101,12 +101,12 @@ export function WhatsAppWidget() {
         animate={{ scale: 1, opacity: 1 }}
         transition={{ delay: 0.5, type: "spring", stiffness: 200, damping: 20 }}
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center bg-white text-[#0A1128] px-4 py-3 rounded-full shadow-2xl space-x-3 cursor-pointer border-2 border-[#25D366] hover:scale-105 transition-transform"
+        className="flex items-center sm:bg-white sm:text-[#0A1128] sm:px-4 sm:py-3 sm:rounded-full sm:shadow-2xl sm:space-x-3 cursor-pointer sm:border-2 sm:border-[#25D366] hover:scale-105 transition-transform"
         aria-label="Falar pelo WhatsApp"
       >
-        <div className="w-8 h-8 bg-[#25D366] rounded-full flex items-center justify-center relative">
+        <div className="w-14 h-14 sm:w-8 sm:h-8 bg-[#25D366] rounded-full flex items-center justify-center relative shadow-lg sm:shadow-none">
           <span className="absolute w-full h-full rounded-full bg-[#25D366] opacity-40 animate-ping" />
-          <svg className="w-4 h-4 fill-white relative z-10" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.56 5.338-11.891 11.903-11.891 3.181 0 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.481 8.411 0 6.56-5.339 11.892-11.903 11.892-2.003 0-3.96-.503-5.707-1.456l-6.279 1.664zm6.29-4.103c1.733.991 3.323 1.54 5.305 1.54 5.461 0 9.903-4.442 9.903-9.903 0-2.646-1.03-5.132-2.901-7.001-1.868-1.868-4.354-2.898-7.001-2.898-5.461 0-9.904 4.443-9.904 9.903 0 2.09.585 3.861 1.611 5.485l-1.066 3.89 4.053-1.016z"/></svg>
+          <svg className="w-7 h-7 sm:w-4 sm:h-4 fill-white relative z-10" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.56 5.338-11.891 11.903-11.891 3.181 0 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.481 8.411 0 6.56-5.339 11.892-11.903 11.892-2.003 0-3.96-.503-5.707-1.456l-6.279 1.664zm6.29-4.103c1.733.991 3.323 1.54 5.305 1.54 5.461 0 9.903-4.442 9.903-9.903 0-2.646-1.03-5.132-2.901-7.001-1.868-1.868-4.354-2.898-7.001-2.898-5.461 0-9.904 4.443-9.904 9.903 0 2.09.585 3.861 1.611 5.485l-1.066 3.89 4.053-1.016z"/></svg>
         </div>
         <span className="text-[10px] font-bold uppercase tracking-widest hidden sm:inline-block">Atendimento Imediato</span>
       </motion.button>

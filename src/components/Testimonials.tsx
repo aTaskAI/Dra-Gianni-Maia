@@ -92,7 +92,35 @@ export function Testimonials() {
           )}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Mobile Slider (Native Scroll Snap) */}
+        <div className="flex md:hidden overflow-x-auto snap-x snap-mandatory gap-4 pb-8 -mx-6 px-6 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+          {TESTIMONIALS.map((testimonial) => (
+            <div
+              key={`mobile-${testimonial.id}`}
+              className="w-[85vw] flex-shrink-0 snap-center bg-primary-800/50 p-6 sm:p-8 rounded-2xl border border-white/5 relative flex flex-col min-h-[280px]"
+            >
+              <Quote className="text-gold-500/10 absolute top-6 right-6 w-10 h-10" />
+              
+              <div className="flex gap-1 mb-6">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} size={16} className="fill-gold-500 text-gold-500" />
+                ))}
+              </div>
+              
+              <p className="text-slate-300 italic mb-8 relative z-10 leading-relaxed text-sm flex-grow">
+                "{testimonial.text}"
+              </p>
+              
+              <div className="mt-auto border-t border-white/5 pt-4">
+                <p className="text-white font-semibold text-sm">{testimonial.name}</p>
+                <p className="text-gold-500 text-xs mt-1">{testimonial.role}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Desktop Grid */}
+        <div className="hidden md:grid grid-cols-2 lg:grid-cols-3 gap-6">
           {TESTIMONIALS.map((testimonial, index) => (
             <motion.div
               key={testimonial.id}
