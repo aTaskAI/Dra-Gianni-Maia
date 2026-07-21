@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-serif: "Georgia", serif;
+  
+  --color-primary-900: #0A1128;
+  --color-primary-800: #070D1E;
+  --color-primary-700: #10172A;
+  
+  --color-gold-500: #C5A059;
+  --color-gold-400: #D4AF37;
+  --color-gold-600: #B38F4D;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@theme {
+  --animate-bounce-slow: bounce-slow 3s infinite;
+  
+  @keyframes bounce-slow {
+    0%, 100% {
+      transform: translateY(-5%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+}

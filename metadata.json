@@ -1,0 +1,6 @@
+{
+  "name": "Gianni Maia Advocacia",
+  "description": "Landing page para escritório de advocacia premium com foco em conversão via WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
