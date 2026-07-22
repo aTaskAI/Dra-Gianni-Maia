@@ -66,6 +66,25 @@ export function Methodology() {
               </motion.div>
             ))}
           </div>
+
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+            className="mt-16 flex justify-center relative z-10"
+          >
+            <a 
+              href="https://api.whatsapp.com/send/?phone=5535987135775&text=Ol%C3%A1%21+Gostaria+de+agendar+uma+an%C3%A1lise+jur%C3%ADdica+do+meu+caso.&type=phone_number&app_absent=0"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-gtm="whatsapp-analise"
+              className="w-full sm:w-auto inline-flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 bg-gold-500 hover:bg-gold-400 text-primary-900 px-6 sm:px-10 py-4 sm:py-5 text-sm md:text-lg font-bold uppercase tracking-wider rounded-lg transition-all shadow-lg hover:shadow-gold-500/20 hover:-translate-y-1 text-center"
+            >
+              <MessageCircle className="w-6 h-6 sm:w-8 sm:h-8 mb-1 sm:mb-0" />
+              <span>Falar agora com nossa equipe</span>
+            </a>
+          </motion.div>
         </div>
       </div>
     </section>

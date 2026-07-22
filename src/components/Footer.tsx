@@ -61,9 +61,9 @@ export function Footer() {
             <h4 className="text-white font-semibold mb-6">Navegação Rápida</h4>
             <ul className="space-y-3 text-sm">
               <li><a href="#inicio" className="text-slate-400 hover:text-gold-500 transition-colors">Início</a></li>
-              <li><a href="#sobre" className="text-slate-400 hover:text-gold-500 transition-colors">Sobre o Escritório</a></li>
-              <li><a href="#areas" className="text-slate-400 hover:text-gold-500 transition-colors">Áreas de Atuação</a></li>
-              <li><a href="#diferenciais" className="text-slate-400 hover:text-gold-500 transition-colors">Diferenciais</a></li>
+              <li><a href="#sobre" className="text-slate-400 hover:text-gold-500 transition-colors">Sobre</a></li>
+              <li><a href="#areas" className="text-slate-400 hover:text-gold-500 transition-colors">Atuação</a></li>
+              <li><a href="#diferenciais" className="text-slate-400 hover:text-gold-500 transition-colors">Análise</a></li>
               <li><a href="#depoimentos" className="text-slate-400 hover:text-gold-500 transition-colors">Depoimentos</a></li>
             </ul>
           </div>
