@@ -43,6 +43,7 @@ export default function NationalCoverage() {
               href={whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
+              data-gtm="whatsapp-cobertura"
               className="mt-10 w-full sm:w-auto inline-flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 bg-[#25D366] hover:bg-[#1ebd5a] text-white px-6 sm:px-8 py-4 text-sm md:text-base font-bold uppercase tracking-wider rounded-lg transition-all shadow-lg hover:shadow-[#25D366]/20 hover:-translate-y-1 text-center"
             >
               <MessageCircle className="w-6 h-6 sm:w-6 sm:h-6 mb-1 sm:mb-0" />

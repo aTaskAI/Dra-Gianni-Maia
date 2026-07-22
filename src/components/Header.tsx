@@ -84,6 +84,7 @@ export function Header() {
             href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
+            data-gtm="whatsapp-header-desktop"
             className="flex flex-col items-center justify-center bg-gold-500/90 hover:bg-gold-400 text-primary-900 px-8 py-3 text-[11px] font-bold uppercase tracking-widest transition-all leading-snug whitespace-nowrap shadow-sm"
           >
             <span>Falar com</span>
@@ -125,6 +126,7 @@ export function Header() {
                 href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
+                data-gtm="whatsapp-header-mobile"
                 className="mt-4 flex items-center justify-center px-5 py-3 bg-gold-500 text-primary-900 font-bold tracking-wider uppercase text-sm rounded-sm"
               >
                 Falar com Advogado

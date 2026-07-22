@@ -123,6 +123,7 @@ export function PracticeAreas() {
                   href={whatsappLink}
                   target="_blank"
                   rel="noopener noreferrer"
+                  data-gtm="whatsapp-areas-atuacao"
                   className="inline-flex items-center gap-2 text-gold-500 text-sm font-semibold hover:text-gold-400 transition-colors uppercase tracking-wider"
                 >
                   Falar sobre seu caso
