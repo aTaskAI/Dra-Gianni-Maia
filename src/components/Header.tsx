@@ -5,8 +5,8 @@ import { ASSETS } from '../config/assets';
 
 const NAV_LINKS = [
   { label: 'Início', href: '#inicio' },
-  { label: 'Sobre o\nEscritório', href: '#sobre' },
-  { label: 'Áreas de\nAtuação', href: '#areas' },
+  { label: 'Sobre', href: '#sobre' },
+  { label: 'Atuação', href: '#areas' },
   { label: 'Diferenciais', href: '#diferenciais' },
   { label: 'Depoimentos', href: '#depoimentos' },
   { label: 'Contato', href: '#contato' },
