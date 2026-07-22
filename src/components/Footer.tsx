@@ -76,7 +76,7 @@ export function Footer() {
                 <span className="text-white font-semibold text-sm">Registro OAB</span>
               </div>
               <p className="text-slate-400 text-sm">Dra. Gianni Maia</p>
-              <p className="text-slate-400 text-sm">OAB/MG</p>
+              <p className="text-slate-400 text-sm">OAB/MG 98958</p>
             </div>
           </div>
 

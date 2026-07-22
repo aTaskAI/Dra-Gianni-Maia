@@ -22,7 +22,7 @@ export function About() {
               <img 
                 src={ASSETS.lawyer.portrait}
                 alt="Dra. Gianni Maia" 
-                className="relative z-10 rounded-xl shadow-2xl object-cover w-full h-[600px] grayscale hover:grayscale-0 transition-all duration-700"
+                className="relative z-10 rounded-xl shadow-2xl object-cover w-full h-[600px] transition-all duration-700"
               />
               {/* Floating badge */}
               <div className="absolute -bottom-8 -right-8 bg-primary-900 p-6 rounded-lg shadow-2xl border border-white/10 z-20 hidden md:block">
