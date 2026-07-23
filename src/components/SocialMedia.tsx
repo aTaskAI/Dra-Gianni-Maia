@@ -70,7 +70,7 @@ export function SocialMedia() {
                     <div className="w-16 h-4 rounded-full bg-slate-950"></div>
                 </div>
                 {ASSETS.socialMedia.mockup1 ? (
-                  <img src={ASSETS.socialMedia.mockup1} alt="Instagram @gianni_maia" className="w-full h-full object-cover rounded-[2rem] md:rounded-[2.5rem]" />
+                  <img src={ASSETS.socialMedia.mockup1} alt="Instagram @gianni_maia" className="w-full h-full object-cover rounded-[2rem] md:rounded-[2.5rem]" width="280" height="570" loading="lazy" />
                 ) : (
                   <div className="w-full h-full flex flex-col items-center justify-center text-slate-500 text-center p-6 border-2 border-dashed border-slate-700/50 m-2 rounded-[2rem] md:rounded-[2.5rem]">
                     <Instagram size={40} className="mb-4 opacity-50" />
@@ -97,7 +97,7 @@ export function SocialMedia() {
                     <div className="w-16 h-4 rounded-full bg-slate-950"></div>
                 </div>
                 {ASSETS.socialMedia.mockup2 ? (
-                  <img src={ASSETS.socialMedia.mockup2} alt="Instagram @giannimaia_advocacia" className="w-full h-full object-cover rounded-[2rem] md:rounded-[2.5rem]" />
+                  <img src={ASSETS.socialMedia.mockup2} alt="Instagram @giannimaia_advocacia" className="w-full h-full object-cover rounded-[2rem] md:rounded-[2.5rem]" width="280" height="570" loading="lazy" />
                 ) : (
                   <div className="w-full h-full flex flex-col items-center justify-center text-slate-500 text-center p-6 border-2 border-dashed border-slate-700/50 m-2 rounded-[2rem] md:rounded-[2.5rem]">
                     <Instagram size={40} className="mb-4 opacity-50" />

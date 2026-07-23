@@ -46,7 +46,7 @@ export function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
                 data-gtm="whatsapp-hero"
-                className="w-full sm:w-auto flex items-center justify-center gap-3 px-8 py-4 bg-[#25D366] hover:bg-[#128C7E] text-white uppercase text-xs tracking-widest font-bold rounded-sm shadow-xl transition-all group"
+                className="w-full sm:w-auto flex items-center justify-center gap-3 px-8 py-4 bg-[#25D366] hover:bg-[#128C7E] text-[#0A1128] uppercase text-xs tracking-widest font-bold rounded-sm shadow-xl transition-all group"
               >
                 <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.56 5.338-11.891 11.903-11.891 3.181 0 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.481 8.411 0 6.56-5.339 11.892-11.903 11.892-2.003 0-3.96-.503-5.707-1.456l-6.279 1.664zm6.29-4.103c1.733.991 3.323 1.54 5.305 1.54 5.461 0 9.903-4.442 9.903-9.903 0-2.646-1.03-5.132-2.901-7.001-1.868-1.868-4.354-2.898-7.001-2.898-5.461 0-9.904 4.443-9.904 9.903 0 2.09.585 3.861 1.611 5.485l-1.066 3.89 4.053-1.016z"/></svg>
                 Agendar Consulta via WhatsApp
@@ -90,6 +90,9 @@ export function Hero() {
                   alt="Gianni Maia Logo" 
                   className="relative z-10 w-full h-auto object-contain drop-shadow-[0_0_30px_rgba(212,175,55,0.4)]"
                   style={{ transformStyle: 'preserve-3d' }}
+                  width="400"
+                  height="400"
+                  fetchPriority="high"
                 />
               </motion.div>
             ) : (
@@ -112,7 +115,7 @@ export function Hero() {
               <ShieldCheck className="text-gold-500" size={24} />
             </div>
             <div>
-              <h3 className="text-white font-semibold mb-1">Sigilo Absoluto</h3>
+              <h2 className="text-white font-semibold mb-1 text-lg">Sigilo Absoluto</h2>
               <p className="text-sm text-slate-400">Garantia total de confidencialidade.</p>
             </div>
           </div>
@@ -121,7 +124,7 @@ export function Hero() {
               <Clock className="text-gold-500" size={24} />
             </div>
             <div>
-              <h3 className="text-white font-semibold mb-1">Atendimento Ágil</h3>
+              <h2 className="text-white font-semibold mb-1 text-lg">Atendimento Ágil</h2>
               <p className="text-sm text-slate-400">Respostas rápidas e estratégicas.</p>
             </div>
           </div>
@@ -132,7 +135,7 @@ export function Hero() {
               </svg>
             </div>
             <div>
-              <h3 className="text-white font-semibold mb-1">Atuação Nacional</h3>
+              <h2 className="text-white font-semibold mb-1 text-lg">Atuação Nacional</h2>
               <p className="text-sm text-slate-400">Consultivo online para todo o Brasil.</p>
             </div>
           </div>

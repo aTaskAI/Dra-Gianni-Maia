@@ -17,6 +17,9 @@ export default function CallToAction() {
           src={ASSETS.cta.background}
           alt="Equipe médica" 
           className="w-full h-full object-cover grayscale opacity-20"
+          width="1200"
+          height="800"
+          loading="lazy"
         />
       </div>
 

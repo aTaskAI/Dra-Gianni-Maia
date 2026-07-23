@@ -52,6 +52,9 @@ export default function CommonDoubts() {
                     src={ASSETS.commonDoubts.image}
                     alt="Estetoscópio" 
                     className="absolute inset-0 w-full h-full object-cover object-center"
+                    width="600"
+                    height="400"
+                    loading="lazy"
                   />
                   <div className="absolute inset-0 bg-primary-900/10 mix-blend-multiply" />
                 </>

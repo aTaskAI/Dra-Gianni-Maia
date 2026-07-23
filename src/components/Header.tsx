@@ -48,7 +48,7 @@ export function Header() {
       <div className="max-w-[1400px] mx-auto px-6 lg:px-8 flex items-center justify-between">
         <a href="#inicio" className="flex items-center gap-3 group" onClick={(e) => handleNavClick(e, '#inicio')}>
           {ASSETS.logo.light && (
-            <img src={ASSETS.logo.light} alt="Gianni Maia Logo" className="h-10 w-auto object-contain" />
+            <img src={ASSETS.logo.light} alt="Gianni Maia Logo" className="h-10 w-auto object-contain" width="100" height="40" loading="eager" />
           )}
           <div className="flex flex-col leading-none">
             <span className="font-serif text-[22px] md:text-[26px] text-white tracking-wide group-hover:text-gold-500 transition-colors">

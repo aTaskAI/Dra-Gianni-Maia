@@ -92,7 +92,14 @@ export function Testimonials() {
               transition={{ delay: 0.2 }}
               className="w-full lg:w-2/3 rounded-2xl overflow-hidden border border-white/10 shadow-2xl relative group"
             >
-              <img src={ASSETS.reviews.googleProfile} alt="Perfil Google Meu Negócio" className="w-full h-full object-cover" />
+              <img 
+                src={ASSETS.reviews.googleProfile} 
+                alt="Perfil Google Meu Negócio" 
+                className="w-full h-full object-cover" 
+                width="600"
+                height="400"
+                loading="lazy"
+              />
               <div className="absolute inset-0 bg-primary-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                 <a href="#" className="flex items-center gap-2 bg-white text-primary-900 px-6 py-3 rounded-full font-semibold hover:bg-gold-500 transition-colors">
                   Ver perfil no Google <ExternalLink size={18} />
@@ -135,16 +142,18 @@ export function Testimonials() {
           </div>
           
           {/* Indicators */}
-          <div className="flex justify-center gap-2 mt-6">
+          <div className="flex justify-center gap-1 mt-6">
             {TESTIMONIALS.map((_, index) => (
               <button
                 key={`dot-${index}`}
                 onClick={() => setCurrentSlide(index)}
-                className={`h-2 rounded-full transition-all duration-300 ${
-                  currentSlide === index ? 'bg-gold-500 w-6' : 'bg-white/20 w-2'
-                }`}
+                className="w-10 h-10 flex items-center justify-center"
                 aria-label={`Ver depoimento ${index + 1}`}
-              />
+              >
+                <div className={`h-2 rounded-full transition-all duration-300 ${
+                  currentSlide === index ? 'bg-gold-500 w-6' : 'bg-white/20 w-2'
+                }`} />
+              </button>
             ))}
           </div>
         </div>
@@ -181,7 +190,7 @@ export function Testimonials() {
         </div>
         
         <div className="mt-12 text-center">
-           <p className="text-xs text-slate-500 font-medium tracking-wide uppercase">
+           <p className="text-xs text-slate-400 font-medium tracking-wide uppercase">
             As avaliações refletem experiências individuais e não representam promessa de resultados. Cada caso exige avaliação.
            </p>
         </div>

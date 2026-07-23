@@ -4,16 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-TMFPMKHR');</script>
-    <!-- End Google Tag Manager -->
+    <meta name="description" content="Gianni Maia Advocacia - Defesa jurídica especializada na garantia do seu direito à saúde. Atuação ágil e humanizada contra negativas de tratamentos." />
 
-    <!-- Hotjar Tracking Code for LP - Google ADS -->
+    <!-- Analytics & Tracking (Deferred for Performance) -->
     <script>
+      function loadThirdPartyScripts() {
+        // Google Tag Manager
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-TMFPMKHR');
+
+        // Hotjar Tracking Code for LP - Google ADS
         (function(h,o,t,j,a,r){
             h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
             h._hjSettings={hjid:6751260,hjsv:6};
@@ -22,13 +25,37 @@
             r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
             a.appendChild(r);
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+      }
+
+      var scriptsLoaded = false;
+      function initScripts() {
+        if (scriptsLoaded) return;
+        scriptsLoaded = true;
+        loadThirdPartyScripts();
+        ['scroll', 'mousemove', 'touchstart', 'click'].forEach(function(e) {
+          window.removeEventListener(e, initScripts);
+        });
+      }
+      
+      ['scroll', 'mousemove', 'touchstart', 'click'].forEach(function(e) {
+        window.addEventListener(e, initScripts, { passive: true, once: true });
+      });
+      
+      window.addEventListener('load', function() {
+        setTimeout(initScripts, 2500);
+      });
     </script>
+    <!-- End Analytics & Tracking -->
 
     <title>Gianni Maia Advocacia | Defesa Jurídica Estratégica</title>
     <link rel="icon" type="image/png" href="https://i.postimg.cc/zvXV7w4c/Logo1.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" media="print" onload="this.media='all'">
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap">
+    </noscript>
   </head>
   <body class="bg-slate-900 text-slate-50 font-sans antialiased selection:bg-amber-500/30">
     <!-- Google Tag Manager (noscript) -->

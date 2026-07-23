@@ -12,7 +12,7 @@ export function Footer() {
           <div className="lg:col-span-1">
             <div className="mb-6 flex items-center gap-3">
               {ASSETS.logo.light && (
-                <img src={ASSETS.logo.light} alt="Gianni Maia Logo" className="h-10 w-auto object-contain" />
+                <img src={ASSETS.logo.light} alt="Gianni Maia Logo" className="h-10 w-auto object-contain" width="100" height="40" loading="lazy" />
               )}
               <div className="flex flex-col leading-none">
                 <span className="font-serif text-[26px] text-white tracking-wide">
@@ -27,14 +27,14 @@ export function Footer() {
               Defesa jurídica especializada na garantia do seu direito à saúde. Atuação ágil e humanizada contra negativas de tratamentos, cirurgias e medicamentos por planos de saúde e SUS.
             </p>
             <div className="flex gap-4">
-              <a href="https://www.instagram.com/giannimaia_advocacia?igsh=ZzNvazZ5eTJnOGh5" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded bg-white/5 flex items-center justify-center text-slate-400 hover:text-gold-500 hover:bg-white/10 transition-colors">
+              <a href="https://www.instagram.com/giannimaia_advocacia?igsh=ZzNvazZ5eTJnOGh5" target="_blank" rel="noopener noreferrer" aria-label="Instagram da Dra. Gianni Maia" className="w-10 h-10 rounded bg-white/5 flex items-center justify-center text-slate-300 hover:text-gold-500 hover:bg-white/10 transition-colors">
                 <Instagram size={20} />
               </a>
             </div>
           </div>
 
           <div>
-            <h4 className="text-white font-semibold mb-6">Contato</h4>
+            <h2 className="text-white font-semibold mb-6 text-base">Contato</h2>
             <ul className="space-y-4">
               <li>
                 <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 text-slate-400 hover:text-gold-500 transition-colors group">
@@ -58,7 +58,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-white font-semibold mb-6">Navegação Rápida</h4>
+            <h2 className="text-white font-semibold mb-6 text-base">Navegação Rápida</h2>
             <ul className="space-y-3 text-sm">
               <li><a href="#inicio" className="text-slate-400 hover:text-gold-500 transition-colors">Início</a></li>
               <li><a href="#sobre" className="text-slate-400 hover:text-gold-500 transition-colors">Sobre</a></li>
@@ -69,7 +69,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-white font-semibold mb-6">Transparência</h4>
+            <h2 className="text-white font-semibold mb-6 text-base">Transparência</h2>
             <div className="bg-primary-800 p-4 rounded-lg border border-white/5 mb-4">
               <div className="flex items-center gap-3 mb-2">
                 <Shield size={20} className="text-gold-500" />
@@ -82,7 +82,7 @@ export function Footer() {
 
         </div>
 
-        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-500">
+        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-400">
           <p>&copy; {new Date().getFullYear()} Gianni Maia Advocacia. Todos os direitos reservados.</p>
           <div className="flex gap-4">
             <a href="#" className="hover:text-gold-500 transition-colors">Política de Privacidade</a>
